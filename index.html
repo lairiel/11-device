@@ -6,19 +6,256 @@
   </head>
   <body>
 
-    <header class="main-header">
-      <div class="container clearfix">
+  <style>
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.index-logo {
+  width: 170px;
+  min-height: 50px;
+  background-color: #EA80FC;
+  position: absolute;
+  top: 20px;
+  left: 186px;
+}
+
+.main-header {
+  margin-bottom: 30px;
+}
+
+.main-header-layout {
+  margin-top: 80px;
+  min-height: 40px;
+  background-color: #E1BEE7;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header-layout::before {
+  display: none;
+}
+
+.search {
+  width: 200px;
+  background-color: #CE93D8;
+  min-height: 40px;
+}
+
+.actions {
+  width: 500px;
+  background-color: #CE93D8;
+  min-height: 40px;
+}
+
+.main-navigation {
+  margin-bottom: 50px;
+}
+
+.main-navigation-layout {
+  display: flex;
+  width: 1040px;
+  min-height: 30px;
+  background-color: #BA68C8;
+  margin-left: 60px;
+}
+
+.main-navigation-layout::before {
+  display: none;
+}
+
+.main-navigation-layout li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.promo-slider {
+  min-height: 500px;
+  background-color: #E6EE9C;
+  margin-bottom: 90px;
+}
+
+.promo-slider-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.promo-slider-left {
+  min-height: 500px;
+  width: 400px;
+  background-color: #D4E157;
+}
+
+.promo-slider-right {
+  width: 500px;
+  min-height: 500px;
+  background-color: #D4E157;
+}
+
+.popular-product-layout {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFF59D;
+  margin-bottom: 80px;
+}
+
+.popular {
+  width: 160px;
+  min-height: 240px;
+  background-color: #FFEE58;
+}
+
+.services-layout {
+  min-height: 390px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #B0BEC5;
+  margin-bottom: 100px;
+}
+
+.services-slider-btn {
+  width: 280px;
+  min-height: 390px;
+  background-color: #90A4AE;
+}
+
+.services-slider-about {
+  width: 760px;
+  background-color: #90A4AE;
+  min-height: 390px;
+}
+
+.logotypes-layout {
+  min-height: 90px;
+  background-color: #E0F7FA;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+
+.logotypes-layout a {
+  width: 260px;
+  height: 90px;
+  background-color: #B2EBF2;
+}
+
+.about-company-layout {
+  min-height: 520px;
+  background-color: #FFCDD2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-us {
+  width: 460px;
+  background-color: #EF9A9A;
+}
+
+.contacts {
+  width: 560px;
+  background-color: #EF9A9A;
+}
+
+.main-footer {
+  margin-top: 80px;
+  background-color: #FFCCBC;
+  min-height: 323px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-row-1-layout {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 65px;
+  background-color: #FFAB91;
+  margin-bottom: 30px;
+}
+
+.footer-logo {
+  width: 160px;
+  background-color: #FF8A65;
+}
+
+.footer-user-block {
+  width: 360px;
+  background-color: #FF8A65;
+}
+
+.footer-row-2-layout {
+  display: flex;
+  height: 30px;
+  background-color: #FFAB91;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.footer-row-2-layout p {
+  margin: 0;
+}
+
+.footer-adress {
+  background-color: #FF8A65;
+  width: 200px;
+}
+
+.footer-features {
+  background-color: #FF8A65;
+  width: 440px;
+}
+
+.footer-phone {
+    background-color: #FF8A65;
+    width: 180px;
+}
+
+.footer-row-3-layout {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFAB91;
+  width: 160px;
+  height: 40px;
+}
+
+.social-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #FF8A65;
+}
+
+</style>
+
+    <div class="main-header">
         <div class="index-logo">
           <img src="img/index-logo.png" width="175" height="56" alt="Device">
         </div>
-        <div class="user-block">
-          <input type="search" name="search" placeholder="Поиск по сайту">
-          <a class="login" href="#">Войти</a>
-          <a class="compare" href="#">Сравнить</a>
-          <a class="cart" href="#">Корзина</a>
+        <div class="main-header-layout container">
+          <div class="search">
+            <input type="search" name="search" placeholder="Поиск по сайту">
+          </div>
+          <div class="actions">
+                <a class="login" href="#">Войти</a>
+                <a class="compare" href="#">Сравнить</a>
+                <a class="cart" href="#">Корзина</a>
+          </div>
         </div>
-        <nav class="main-navigation">
-          <ul>
+    </div>
+
+    <nav class="main-navigation container">
+          <ul class="main-navigation-layout">
             <li>
               <a href="#">Каталог товаров</a>
             </li>
@@ -32,132 +269,146 @@
               <a href="#">Контакты</a>
             </li>
           </ul>
-        </nav>
-      </div>
-    </header>
-
-    <article class="promo-slider">
-      <div class="container clearfix">
-        <img class="promo-img" src="img/promo-img-1.png" width="440" height="530" alt="Промо-1">
-        <h2>Делай селфи,<br> как Бен Стиллер!</h2>
-        <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длинной и весом всего 5 киллограмм.</p>
-        <a class="btn" href="#">Подробнее</a>
-        <table class="promo-feature">
-          <tr>
-            <td>8,5 м</td>
-            <td>5 кг</td>
-            <td>Карбон</td>
-          </tr>
-          <tr>
-            <td>Длина палки</td>
-            <td>Вес палки</td>
-            <td>Материал</td>
-          </tr>
-        </table>
-        <button class="slidbar-indicator" type="button"></button>
+    </nav>
+    
+    <article class="promo-slider container">
+      <div class="promo-slider-layout">
+        <div class="promo-slider-left">
+            <img class="promo-img" src="img/promo-img-1.png" width="440" height="500" alt="Промо-1">
+        </div>
+        <div class="promo-slider-right">
+          <h2>Делай селфи,<br> как Бен Стиллер!</h2>
+          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длинной и весом всего 5 киллограмм.</p>
+          <a class="btn" href="#">Подробнее</a>
+          <table class="promo-feature">
+            <tr>
+              <td>8,5 м</td>
+              <td>5 кг</td>
+              <td>Карбон</td>
+            </tr>
+            <tr>
+              <td>Длина палки</td>
+              <td>Вес палки</td>
+              <td>Материал</td>
+            </tr>
+          </table>
+          <button class="slidbar-indicator" type="button"></button>
+        </div>        
       </div>
     </article>
 
-    <section class="popular">
-      <div class="container clearfix">
-        <div class="popular-1">
-          <img src="img/popular-1.png" alt="">
+    <section class="popular-product">
+      <div class="popular-product-layout container">
+        <div class="popular popular-1">
+          <img src="img/popular-1.png" width="160" height="160">
           <p>Виртуальная реальность</p>
         </div>
-        <div class="popular-2">
-          <img src="img/popular-2.png" alt="">
+        <div class="popular popular-2">
+          <img src="img/popular-2.png" width="160" height="160">
           <p>Моноподы для селфи</p>
         </div>     
-        <div class="popular-3">
-          <img src="img/popular-3.png" alt="">
+        <div class="popular popular-3">
+          <img src="img/popular-3.png" width="160" height="160">
           <p>Экшн-камеры</p>
         </div> 
-        <div class="popular-4">
-          <img src="img/popular-4.png" alt="">
+        <div class="popular popular-4">
+          <img src="img/popular-4.png" width="160" height="160">
           <p>Фитнес-браслеты</p>
         </div> 
-        <div class="popular-5">
-          <img src="img/popular-5.png" alt="">
+        <div class="popular popular-5">
+          <img src="img/popular-5.png" width="160" height="160">
           <p>Умные часы</p>
         </div> 
-        <div class="popular-6">
-          <img src="img/popular-6.png" alt="">
+        <div class="popular popular-6">
+          <img src="img/popular-6.png" width="160" height="160">
           <p>Квадрокоптеры</p>
         </div>     
       </div>
     </section>
 
     <section class="services">
-      <div class="container clearfix">
-        <h2>Доставка</h2>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо зарабатываем, поднимая его на ваш этаж.</p>
-        <div class="services-slider">
-          <button class="btn delivery" type="button">Доставка</button>          
-          <button class="btn warranty" type="button">Гарантия</button>          
-          <button class="btn credit" type="button">Кредит</button>          
-        </div>
+      <div class="services-layout container">
+         <div class="services-slider-btn">
+            <button class="btn delivery" type="button">Доставка</button>          
+            <button class="btn warranty" type="button">Гарантия</button>          
+            <button class="btn credit" type="button">Кредит</button>          
+         </div>
+         <div class="services-slider-about">
+           <h2>Доставка</h2>
+           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо зарабатываем, поднимая его на ваш этаж.</p>
+         </div>
       </div>
     </section>
 
     <section class="logotypes">
-      <div class="container clearfix">
-        <a href="#"><img src="img/logo/1.png"></a>
-        <a href="#"><img src="img/logo/2.png"></a>
-        <a href="#"><img src="img/logo/3.png"></a>
-        <a href="#"><img src="img/logo/4.png"></a>
+      <div class="logotypes-layout container">
+        <a href="#"><img src="img/logo/1.png" width="260" height="90"></a>
+        <a href="#"><img src="img/logo/2.png" width="260" height="90"></a>
+        <a href="#"><img src="img/logo/3.png" width="260" height="90"></a>
+        <a href="#"><img src="img/logo/4.png" width="260" height="90"></a>
       </div>
     </section>
 
-    <div class="about-us">
-        <div class="container clearfix">
-          <h2>О нас</h2>
-          <p>Огромный выбор наджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVAICE работает со многими транспортными компаниями:</p>
-          <ul>
-            <li>
-              <a href="#">Деловые линии</a>
-            </li>
-            <li>
-              <a href="#">Авторейдинг</a>
-            </li>
-            <li>
-              <a href="#">ЖелДорЭкспедиция</a>
-            </li>
-          </ul>
-          <a class="btn" href="#">Подробнее о нас</a>
-        </div>
-        <div class="contacts">
-          <h2>Контакты</h2>
-          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <img src="img/map.jpg" alt="Карта">
-          <a class="btn" href="#">Напишите нам</a>
-        </div>
+    <div class="about-company">
+        <div class="about-company-layout container">
+          <div class="about-us">
+            <h2>О нас</h2>
+            <p>Огромный выбор наджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+            <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVAICE работает со многими транспортными компаниями:</p>
+            <ul>
+              <li>
+                <a href="#">Деловые линии</a>
+              </li>
+              <li>
+                <a href="#">Авторейдинг</a>
+              </li>
+              <li>
+                <a href="#">ЖелДорЭкспедиция</a>
+              </li>
+            </ul>
+            <a class="btn" href="#">Подробнее о нас</a>
+          </div>
+          <div class="contacts">
+            <h2>Контакты</h2>
+            <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+            <img src="img/map.jpg" alt="Карта">
+            <a class="btn" href="#">Напишите нам</a>
+          </div>
     </div>
     
     <footer class="main-footer">
-      <div class="container clearfix">
-        <div class="footer-logo">
-          <img src="img/footer-logo.png" width="180" height="50" alt="Device">
+
+        <div class="footer-row-1-layout container">
+            <div class="footer-logo">
+              <img src="img/footer-logo.png" width="180" height="50" alt="Device">
+            </div>
+            <div class="footer-user-block">
+              <a class="login" href="#">Войти</a>
+              <a class="compare" href="#">Сравнить</a>
+              <a class="cart" href="#">Корзина</a>
+            </div>
         </div>
-        <section class="footer-user-block">
-          <a class="login" href="#">Войти</a>
-          <a class="compare" href="#">Сравнить</a>
-          <a class="cart" href="#">Корзина</a>
-        </section>
-        <section class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-        </section>
-        <section class="footer-features">
-          <a class="footer-delivery" href="#">Доставка</a>
-          <a class="footer-warranty" href="#">Гарантия</a>
-          <a class="footer-contacts" href="#">Контакты</a>
-        </section>
-        <div class="footer-info">
-          <p>г. Москва, ул.  Строителей, 15</p>
-          <p>Тел.: +7 (495) 495-95-95</p>
+
+        <div class="footer-row-2-layout container">
+          <div class="footer-adress">
+            <p>г. Москва, ул.  Строителей, 15</p>
+          </div>
+          <div class="footer-features">
+            <a class="footer-delivery" href="#">Доставка</a>
+            <a class="footer-warranty" href="#">Гарантия</a>
+            <a class="footer-contacts" href="#">Контакты</a>
+          </div>
+          <div class="footer-phone">
+            <p>Тел.: +7 (495) 495-95-95</p>
+          </div>
         </div>
+        
+        <div class="footer-row-3-layout container">
+            <a class="social-btn social-btn-vk" href="#"></a>
+            <a class="social-btn social-btn-fb" href="#"></a>
+            <a class="social-btn social-btn-tw" href="#"></a>
+        </div>
+
       </div>
     </footer>
     </body>
